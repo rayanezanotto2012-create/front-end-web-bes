@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maratona - Avalie o que você assistiu</title>
+    </head>
+    <body>
+        <header>
+            <h1>Maratona</h1>
+            <p>Registre e avalie o que você acabou de maratonar</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Nova avaliação</h2>
+                <form action="https://postman-echo.com/post" method="post">
+
+                    <fieldset>
+                        <legend>O que você assistiu</legend>
+
+                        <div class="campo">
+                            <label for="apelido_id">Seu apelido:</label>
+                            <input id="apelido_id" name="apelido" type="text" required placeholder="Ex: Ray">
+                        </div>
+
+                        <div class="campo">
+                            <label for="titulo_id">Título do filme, série ou desenho:</label>
+                            <input id="titulo_id" name="titulo" type="text" placeholder="Ex: A Odisseia">
+                        </div>
+
+                        <div class="campo">
+                            <label for="tipo_id">Tipo:</label>
+                            <select id="tipo_id" name="tipo">
+                                <option value="filme">Filme</option>
+                                <option value="serie">Série</option>
+                                <option value="desenho">Desenho</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="ano_id">Ano de lançamento:</label>
+                            <input id="ano_id" name="ano" type="text" pattern="^(19|20)[0-9]{2}$" placeholder="Ex: 2026">
+                        </div>
+
+                        <div class="campo">
+                            <label for="capa_id">Capa do filme/série/desenho:</label>
+                            <input id="capa_id" name="capa" type="file" accept="image/*">
+                        </div>
+
+                        <div class="campo">
+                            <label for="data_id">Data que terminou de assistir:</label>
+                            <input id="data_id" name="data_termino" type="date">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Gêneros de Filmes/Séries</legend>
+
+                        <div class="campo-linha">
+                            <input id="genero_acao_id" name="generos" type="checkbox" value="acao">
+                            <label for="genero_acao_id">Ação</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_comedia_id" name="generos" type="checkbox" value="comedia">
+                            <label for="genero_comedia_id">Comédia</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_drama_id" name="generos" type="checkbox" value="drama">
+                            <label for="genero_drama_id">Drama</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_terror_id" name="generos" type="checkbox" value="terror">
+                            <label for="genero_terror_id">Terror</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_fantasia_id" name="generos" type="checkbox" value="fantasia">
+                            <label for="genero_fantasia_id">Fantasia</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_ficcao_id" name="generos" type="checkbox" value="ficcao">
+                            <label for="genero_ficcao_id">Ficção científica</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_romance_id" name="generos" type="checkbox" value="romance">
+                            <label for="genero_romance_id">Romance</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_suspense_id" name="generos" type="checkbox" value="suspense">
+                            <label for="genero_suspense_id">Suspense</label>
+                        </div>
+                    </fieldset>
+
+                     <fieldset>
+                        <legend>Gêneros de Desenhos Animados</legend>
+
+                        <div class="campo-linha">
+                            <input id="genero_animacao_id" name="generos_desenho" type="checkbox" value="animacao">
+                            <label for="genero_animacao_id">Animação</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_comedia_id" name="generos_desenho" type="checkbox" value="comedia">
+                            <label for="genero_comedia_id">Comédia</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_educativo_id" name="generos_desenho" type="checkbox" value="educativo">
+                            <label for="genero_educativo_id">Educativo</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_fantasia_id" name="generos_desenho" type="checkbox" value="fantasia">
+                            <label for="genero_fantasia_id">Fantasia</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="genero_infantil_id" name="generos_desenho" type="checkbox" value="infantil">
+                            <label for="genero_infantil_id">Infantil</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua avaliação</legend>
+
+                        <div class="campo">
+                            <label>Sua nota:</label>
+                            <div class="estrelas">
+                                <input type="radio" id="estrela5" name="nota" value="5"><label for="estrela5">★</label>
+                                <input type="radio" id="estrela4" name="nota" value="4"><label for="estrela4">★</label>
+                                <input type="radio" id="estrela3" name="nota" value="3"><label for="estrela3">★</label>
+                                <input type="radio" id="estrela2" name="nota" value="2"><label for="estrela2">★</label>
+                                <input type="radio" id="estrela1" name="nota" value="1"><label for="estrela1">★</label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="resenha_id">Sua opinião:</label>
+                            <textarea id="resenha_id" name="resenha" placeholder="Sem spoilers, por favor!"></textarea>
+                        </div>
+
+                        <div class="campo-linha">
+                            <input id="recomenda_sim_id" name="recomenda" type="radio" value="sim">
+                            <label for="recomenda_sim_id">Recomendo</label>
+                        </div>
+                        <div class="campo-linha">
+                            <input id="recomenda_nao_id" name="recomenda" type="radio" value="nao">
+                            <label for="recomenda_nao_id">Não recomendo</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+    <legend>Streaming</legend>
+
+    <div class="campo">
+        <label for="plataforma_id">Onde você assistiu:</label>
+
+        <select id="plataforma_id" name="plataforma" onchange="mostrarOutro()">
+            <option value="netflix">Netflix</option>
+            <option value="prime">Prime Video</option>
+            <option value="hbo">HBO Max</option>
+            <option value="disney">Disney+</option>
+            <option value="outra">Outro</option>
+        </select>
+    </div>
+
+    <div class="campo" id="campoOutro" style="display: none;">
+        <label for="outroStreaming">Qual streaming?</label>
+        <input type="text" id="outroStreaming" name="outroStreaming" placeholder="Digite o nome do streaming">
+    </div>
+</fieldset>
+
+<script>
+    function mostrarOutro() {
+        const select = document.getElementById("plataforma_id");
+        const campoOutro = document.getElementById("campoOutro");
+
+        if (select.value === "outra") {
+            campoOutro.style.display = "block";
+        } else {
+            campoOutro.style.display = "none";
+        }
+    }
+</script>
+
+                    <div class="botoes">
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Salvar avaliação</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados &copy;</p>
+        </footer>
+    </body>
+</html>
