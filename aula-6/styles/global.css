@@ -4,12 +4,29 @@
     box-sizing: border-box;
 }
 
+.titulo {
+    text-align: center;
+    color: #493b2a;
+    border-bottom: 1px solid #8d7c5f;
+    padding-bottom: 10px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #8a755c;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
 body {
-    font-size: 16px;
-    font-family: "Franklin Gothic Medium", sans-serif;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    color: #151515;
+    font-size: 12px;
+    font-family: "Georgia, serif", serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #b0b0b0;
+    color: #36322b;
 }
 
 h1 {
@@ -18,7 +35,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 17px;
+    color: #222222;
+    letter-spacing: 3dpx;
     margin-bottom: 0.5rem;
 }
 
@@ -29,11 +48,13 @@ p {
 }
 
 section {
-    background-color: #e5e5e5;
-    padding: 2rem;
+    background-color: #e9dfd0;
+    color: #493b2a;
+    padding: 15px;
+    margin: 10px;
     margin-bottom: 2rem;
     border-radius: 0.5rem;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #626262;
     text-align: center;
 }
 
@@ -42,7 +63,9 @@ footer {
 }
 
 .item {
-    background-color: #5f00f7;
+    display: inline;
+    padding: 7px;
+    background-color: #836d54;
     color: #ffffff;
 }
 
@@ -67,18 +90,18 @@ footer {
 
 .container-flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 10rem;
-    gap: 0.5rem;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .container-flex .item {
-    padding: 0.5rem;
-    flex-basis: 100px;
-    flex-shrink: 1;
-    flex-grow: 1;
+    background-color: #836d54;
+    color: #ffffff;
+    text-align: left;
+    padding: 13px;
+    flex-basis: 900px;
+    flex-shrink: 30;
+    flex-grow: 10;
 }
 
 #item2 {
@@ -110,31 +133,177 @@ footer {
         "rodape rodape";
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 4fr 0.5fr;
-    height: 300px;
+    min-height: 500px;
+    gap: 10px;
 }
 
 .container-grid-area div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .container-grid-area .item-cabecalho {
     grid-area: cabecalho;
-    background-color: #5f00f7;
+    background-color: #E9DFD0;
+    color: #493B2A;
 }
 
 .container-grid-area .item-principal {
     grid-area: principal;
-    background-color: #00f7a1;
+    background-color: #F5F0E7;
+    color: #493B2A;
+}
+
+.container-grid-area .item-principal img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .container-grid-area .item-artigo {
     grid-area: artigo;
-    background-color: #f7e600;
+    background-color: #E9DFD0;
+    color: #493B2A;
+}
+
+.container-grid-area .item-artigo img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .container-grid-area .item-rodape {
     grid-area: rodape;
-    background-color: #f70000;
+    background-color: #493B2A;
+    color: white;
+}
+
+.container-bebidas {
+    display: grid;
+
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "principal artigo"
+        "rodape rodape";
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    gap: 15px;
+    min-height: 450px;
+}
+
+.container-bebidas > div {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.bebidas-cabecalho {
+    grid-area: cabecalho;
+    background-color: #E9DFD0;
+    color: #493B2A;
+}
+
+.bebida-principal {
+    grid-area: principal;
+    background-color: #F5F0E7;
+    color: #493B2A;
+}
+
+.bebida-artigo {
+    grid-area: artigo;
+    background-color: #E9DFD0;
+    color: #493B2A;
+}
+
+.bebidas-rodape {
+    grid-area: rodape;
+    background-color: #493B2A;
+    color: white;
+}
+
+.container-bebidas img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.container-sobremesas {
+    display: grid;
+
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho"
+        "principal artigo terceira"
+        "quarta quinta sexta"
+        "rodape rodape rodape";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+
+    gap: 20px;
+    padding: 20px;
+    background-color: #F5F0E7;
+    color: #493B2A;
+}
+
+.container-sobremesas > div {
+    background-color: #E9DFD0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sobremesas-cabecalho {
+    grid-area: cabecalho;
+}
+
+.sobremesa-principal {
+    grid-area: principal;
+}
+
+.sobremesa-artigo {
+    grid-area: artigo;
+}
+
+.sobremesa-terceira {
+    grid-area: terceira;
+}
+
+.sobremesa-quarta {
+    grid-area: quarta;
+}
+
+.sobremesa-quinta {
+    grid-area: quinta;
+}
+
+.sobremesa-sexta {
+    grid-area: sexta;
+}
+
+.sobremesas-rodape {
+    grid-area: rodape;
+    color: #80633F;
+}
+
+.container-sobremesas img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.container-sobremesas h2 {
+    color: #493B2A;
+}
+
+.container-sobremesas strong {
+    color: #80633F;
 }

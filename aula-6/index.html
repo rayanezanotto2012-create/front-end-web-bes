@@ -5,87 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="icon" href="./images/logo.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Cardapio Restaurante</title>
 </head>
 <body>
     <header>
-        <h1>Conhecendo os displays do CSS</h1>
+        <h1 class="titulo">RESTAURANTE ORIGEM</h1>
+        <p class="subtitulo">GASTRONOMIA CONTEMPORÂNEA</p>
     </header>
 
     <main>
         <section>
-            <h2>Display Block</h2>
-                <div class="container-block">
-                    <div class="item">Item 1</div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                </div>
-                <p>Elementos são blocos que ocupam a linha toda por padrão.</p>
-        </section>
-
-        <section>
-            <h2>Display Inline</h2>
-                <div class="container-inline">
-                    <div class="item">Item 1</div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                </div>
-                <p>Elementos ficam em linha e respeitam o conteúdo textual.</p>
-        </section>
-
-        <section>
-            <h2>Display Inline-block</h2>
-                <div class="container-inline-block">
-                    <div class="item">Item 1</div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                </div>
-                <p>Elementos ficam em linha, mas se comportam como blocos.</p>
-        </section>
-
-        <section>
-            <h2>Display Flex</h2>
-                <div class="container-flex">
-                    <div class="item">Item 1</div>
-                    <div id="item2" class="item">Item 2</div>
-                    <div id="item3" class="item">Item 3</div>
-                    <div class="item">Item 4</div>
-                    <div class="item">Item 5</div>
-                    <div class="item">Item 6</div>
-                </div>
-                <p>Elementos ficam flexivéis e se organizam em uma direção.</p>
-        </section>
-
-        <section>
-            <h2>Display Grid</h2>
+            <h2>PRATOS PRINCIPAIS</h2>
                 <div class="container-grid">
-                    <div class="item">Item 1</div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                    <div class="item">Item 4</div>
-                    <div class="item">Item 5</div>
-                    <div class="item">Item 6</div>
-                    <div class="item">Item 7</div>
-                    <div class="item">Item 8</div>
-                    <div class="item">Item 9</div>
+                    <div class="item">R$59,90</div>
+                    <div class="item">PRATO 01 - FILÉ À ORIGEM</div>
+                    <div class="item">FILÉ-MIGNON GRELHADO. ACOMPANHADO DE PURÊ DE BATATAS CREMOSO, LEGUMES SALTEADOS NA MANTEIGA E MOLHO DE ERVAS</div>
+                    <div class="item">R$46,90</div>
+                    <div class="item">PRATO 02 - RISOTO PRIMAVERA</div>
+                    <div class="item">RISOTO CREMOSO PREPARADO COM ARROZ ARBÓREO, COGUMELOS FRESCOS, QUEIJO PARMESSÃO E FINALIZADO COM ERVAS AROMÁTICAS</div>
+                    <div class="item">R$64,90</div>
+                    <div class="item">PRATO 03 - SALMÃO MEDITERRÂNEO</div>
+                    <div class="item">FILÉ DE SALMÃO GRELHADO, ACOMPANHADO DE BATATAS DOURADAS, ASPARGOS FRESCOS E MOLHO CÍTRICO DE LIMÃO</div>
+                    <div class="item">R$62,90</div>
+                    <div class="item">PRATO 04 - MEDALHÃO AO MOLHO MADEIRA</div>
+                    <div class="item">MEDALHÃO DE FILÉ-MIGNON AO MOLHO MADEIRA, ACOMPANHADO DE PURÊ DE BATATAS E LEGUMES GRELHADOS</div>
+                    <div class="item">R$42,90</div>
+                    <div class="item">PRATO 05 - FETTUCCINE AO PESTO</div>
+                    <div class="item">MASSA FETTUCCINE ENVOLVIDA EM MOLHO PESTO DE MANJERICÃO, FINALIZADA COM PARMESSÃO RALADO E TOMATES-CEREJA FRESCOS</div>
                 </div>
-                <p>Elementos ficam posicionados em linhas e colunas.</p>
+        </section>
+
+         <section>
+            <div class="container-grid-area">
+
+    <div class="item-cabecalho">
+        <h2>PRATOS EM DESTAQUE</h2>
+    </div>
+    <div class="item-principal">
+        <img src="imagens/filé.jpg" alt="Filé à origem">
+        <h3>Filé à origem</h3>
+        <p>Filé grelhado com molho madeira e legumes.</p>
+        <strong>R$ 59,90</strong>
+    </div>
+    <div class="item-artigo">
+        <img src="imagens/risoto.jpg" alt="Risoto primavera">
+        <h3>Risoto primavera</h3>
+        <strong>R$ 46,90</strong>
+    </div>
+    <div class="item-rodape">
+        <p>Origem | Gastronomia com autenticidade</p>
+    </div>
+</div>
         </section>
 
         <section>
-            <h2>Display grid areas</h2>
-            <div class="container-grid-area">
-                <div class="item item-cabecalho">Cabeçalho</div>
-                <div class="item item-principal">Principal</div>
-                <div class="item item-artigo">Artigo</div>
-                <div class="item item-rodape">Rodapé</div>
-            </div>
-            <p>Elementos ficam posicionados em linhas e colunas nomeadas.</p>
+            <h2>ACOMPANHAMENTOS</h2>
+            <p class="subtitulo">R$5,00 CADA</p>
+            <p></p>
+                <div class="container-flex">
+                    <div class="item">BATATA RÚSTICA</div>
+                    <div id="item2" class="item">LEGUMES GRELHADOS</div>
+                    <div id="item3" class="item">FAROFA CROCANTE</div>
+                    <div class="item">PURÊ ARTESANAL</div>
+                    <div class="item">SALADA FRESCA</div>
+                    <div class="item">ARROZ À GREGA</div>
+                </div>
         </section>
+
+        <section>
+            <h2>BEBIDAS</h2>
+                <div class="container-grid">
+                    <div class="item">RS$24,90</div>
+                    <div class="item">MOJITO CLÁSSICO</div>
+                    <div class="item">LIMÃO FRESCO, HOTELÃ, ÁGUA COM GÁS E NOTAS CÍTRICAS</div>
+                    <div class="item">R$26,90</div>
+                    <div class="item">RUBI ROSÉ</div>
+                    <div class="item">FRUTAS VERMELHAS, CRANBERRY E UM DELICADO TOQUE DE ALECRIM, SEM ÁLCOOL</div>
+                    <div class="item">R$22,90</div>
+                    <div class="item">DOURADO TROPICAL</div>
+                    <div class="item">MARACUJÁ, BAUNILHA E ÁGUA GASEIFICADA, COMEQUILÍBRIO ENTRE ACIDEZ E DOÇURA, SEM ÁLCOOL</div>
+                    <div class="item">R$32,90</div>
+                    <div class="item">ESPRESSO MARTINI</div>
+                    <div class="item">VODKA, CAFÉ ESPRESSO E LICOR DE CAFÉ, COM ESPUMA AVELUDADA</div>
+                    <div class="item">R$34,90</div>
+                    <div class="item">NEGRONI</div>
+                    <div class="item">GIN, VERMUTE TINTO E BITTER ITALIANO, COM PERFIL INTENSO E LEVEMENTE AMARGO</div>
+                    <div class="item">R$21,90</div>
+                    <div class="item">BRISA DOURADA</div>
+                    <div class="item">BEBIDA GASEIFICADA DE UVA BRANCA, COM NOTAS FLORAIS E FINAL REFRESCANTE, SEM ÁLCOOL</div>
+                </div>
+        </section>
+
+         <section>
+           <div class="container-bebidas">
+    <div class="bebidas-cabecalho">
+        <h2>BEBIDAS EM DESTAQUE</h2>
+    </div>
+    <div class="bebida-principal">
+        <img src="imagens/mojito.jpg" alt="Mojito clássico">
+        <h3>Mojito Clássico</h3>
+        <p>Limão fresco, hortelã e água com gás.</p>
+        <strong>R$ 24,90</strong>
+    </div>
+    <div class="bebida-artigo">
+        <img src="imagens/rubi.jpg" alt="Rubi Rosé">
+        <h3>Rubi Rosé</h3>
+        <p>Frutas vermelhas e notas de alecrim. Sem álcool.</p>
+        <strong>R$ 26,90</strong>
+    </div>
+    <div class="bebidas-rodape">
+        <p>Origem | Sabores que surpreendem</p>
+    </div>
+</div>
+        </section>
+
+         <section>
+            <h2>SOBREMESAS</h2>
+                <div class="container-grid">
+                    <div class="item">RS$30,90</div>
+                    <div class="item">TIRAMISÙ ITALIANO</div>
+                    <div class="item">CAMADAS DELICADAS DE CREME DE MASCARPONE, CAFÉ E CACAU</div>
+                    <div class="item">R$32,90</div>
+                    <div class="item">CRÈME BRÛLÉE</div>
+                    <div class="item">CREME DE BAUNILHA COM UMA FINA CAMADA DE AÇÚCAR CARAMELIZADO</div>
+                    <div class="item">R$24,90</div>
+                    <div class="item">CHEESECAKE DE FRUTAS VERMELHAS</div>
+                    <div class="item">CHEESECAKE CREMOSO COM CALDA ARTESANAL DE FRUTAS VERMELHAS</div>
+                    <div class="item">R$23,90</div>
+                    <div class="item">PANNA COTTA TROPICAL</div>
+                    <div class="item">CREME DELICADO DE BAUNILHA COM CALDA FRESCA DE MARACUJÁ</div>
+                    <div class="item">R$25,90</div>
+                    <div class="item">GELATO DE PISTACHE</div>
+                    <div class="item">SORVETE ARTESANAL DE PISTACHE COM PEDAÇOS DA CASTANHA</div>
+                    <div class="item">R$28,90</div>
+                    <div class="item">VULCÃO DE CHOCOLATE</div>
+                    <div class="item">BOLO DE CHOCOLATE COM CENTRO CREMOSO, ACOMPANHADO DE SORVETE DE BAUNILHA</div>
+                </div>
+        </section>
+
+         <section>
+           <div class="container-sobremesas">
+    <div class="sobremesas-cabecalho">
+        <h2>SOBREMESAS EM DESTAQUE</h2>
+    </div>
+    <div class="sobremesa-principal">
+        <img src="imagens/Crème.jpg" alt="Crème Brûlée">
+        <h3>CRÈME BRÛLÉE</h3>
+        <p>Creme de baunilha e fina camada de açúcar caramelizado</p>
+        <strong>R$ 32,90</strong>
+    </div>
+    <div class="sobremesa-artigo">
+        <img src="imagens/TIRAMISÙ_ITALIANO.jpg" alt="Tiramisu Italiano">
+        <h3>TIRAMISÙ ITALIANO</h3>
+        <p>Creme de mascarpone, café e cacau</p>
+        <strong>R$ 30,90</strong>
+    </div>
+    <div class="sobremesas-rodape">
+        <p>Origem | Sabores que surpreendem</p>
+    </div>
+</div>
+        </section>
+
+        <section>
+            <h2>ACOMPANHAMENTOS PARA SOBREMESAS</h2>
+            <p class="subtitulo">R$10,00 CADA</p>
+            <p></p>
+                <div class="container-flex">
+                    <div class="item">SORVETE BAUNILHA</div>
+                    <div id="item2" class="item">FRUTAS VERMELHAS FRESCAS</div>
+                    <div id="item3" class="item">CALDA DE CHOCOLATE</div>
+                    <div class="item">PISTACHE TRITURADO</div>
+                    <div class="item">CHANTILLY ARTESANAL</div>
+                    <div class="item">CALDA DE CARAMELO</div>
+                </div>
+        </section>
+
+        <section>
+            <h2>A ESSÊNCIA DO ORIGEM</h2>
+                <div class="container-inline">
+                    <div class="item">INGREDIENTES FRESCOS</div>
+                    <div class="item">PREPARAÇÃO ARTESANAL</div>
+                    <div class="item">SABORES AUTÊNTICOS</div>
+                    <div class="item">APRESENTAÇÃO ELEGANTE</div>
+                    <div class="item">EXPERIÊNCIA GASTRONÔMICA</div>
+                    <div class="item">ATENDIMENTO PERSONALIZADO</div>
+                </div>
+        </section>
+        
 
     </main>
     <footer>
-        <p>Projeto de compreensão de display no CSS</p>
     </footer>
 </body>
 </html>
